@@ -1,4 +1,6 @@
 <h2>{{greeting}}</h2>
+<h3 *ngIf="isLoading">LOADING...</h3>
+<img *ngIf="dogsImages" [src]="dogsImages" />
 <div>
   <button (click)="toggleVisibility()" type="button">alerar visibilidade</button>
 </div>
@@ -11,10 +13,10 @@
   <button (click)="sayGoodbye()" type="button">Tchau</button>
 </ng-template>
 
-<ul *ngFor="let lenguages of programingLanguages">
-  <li>{{lenguages}}</li>
+<ul>
+  <li *ngFor="let lenguages of programingLanguages">{{lenguages}}</li>
 </ul>
 
-<ul *ngFor="let people of peoples">
-  <li>{{people.name}} : {{people.age}}</li>
+<ul>
+  <li *ngFor="let people of peoples">{{people.name}} : {{people.age}}</li>
 </ul>

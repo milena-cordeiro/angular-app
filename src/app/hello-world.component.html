@@ -10,3 +10,11 @@
 <ng-template #compElse>
   <button (click)="sayGoodbye()" type="button">Tchau</button>
 </ng-template>
+
+<ul *ngFor="let lenguages of programingLanguages">
+  <li>{{lenguages}}</li>
+</ul>
+
+<ul *ngFor="let people of peoples">
+  <li>{{people.name}} : {{people.age}}</li>
+</ul>

@@ -10,6 +10,8 @@ import { Component } from "@angular/core";
 export class HelloWorldComponent {
   greeting: string = 'Hello T30';
   isVisible: boolean = true;
+  programingLanguages: string[] = ['JavaScript', 'TypeScript', 'Java', 'C#', 'Python', 'PHP'];
+  peoples = [{name: 'João', age: 18}, {name: 'Maria', age: 20}, {name: 'José', age: 30}]
 
   sayHello() {
     alert('dizendo olá')

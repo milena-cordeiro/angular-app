@@ -1,0 +1,12 @@
+<h2>{{greeting}}</h2>
+<div>
+  <button (click)="toggleVisibility()" type="button">alerar visibilidade</button>
+</div>
+
+<div *ngIf="isVisible; else compElse">
+  <button (click)="sayHello()" type="button">Alô</button>
+</div>
+
+<ng-template #compElse>
+  <button (click)="sayGoodbye()" type="button">Tchau</button>
+</ng-template>
